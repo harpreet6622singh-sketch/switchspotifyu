@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="110" class="invert" src="img/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+
+                <div class="songList">
+                    <ul></ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="#"><span>Legal</span></a></div>
+                    <div><a href="#"><span>Privacy Center</span></a></div>
+                    <div><a href="#"><span>Privacy Policy</span></a></div>
+                    <div><a href="#"><span>Cookies</span></a></div>
+                    <div><a href="#"><span>About Ads</span></a></div>
+                    <div><a href="#"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="signupbtn">Sign Up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div data-folder="playlist1" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover1.jpg" alt="">
+                        <h2>Rock Classics</h2>
+                        <p>Legends of rock never die.</p>
+                    </div>
+
+                    <div data-folder="playlist2" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover2.jpg" alt="">
+                        <h2>All Out 80s</h2>
+                        <p>The biggest songs of the 80s.</p>
+                    </div>
+
+                    <div data-folder="playlist3" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover3.jpg" alt="">
+                        <h2>Rap God</h2>
+                        <p>Reality is wrong Dreams are for real.</p>
+                    </div>
+
+                    <div data-folder="playlist4" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover5.jpeg" alt="">
+                        <h2>Party Mix</h2>
+                        <p>The best tracks for any celebration.</p>
+                    </div>
+
+                    <div data-folder="playlist5" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover4.jpg" alt="">
+                        <h2>Angry Mood</h2>
+                        <p>Calm your Anger</p>
+                    </div>
+
+                    <div data-folder="playlist6" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover6.jpg" alt="">
+                        <h2>Chill Vibes</h2>
+                        <p>Just sit back and relax.</p>
+                    </div>
+
+                    <div data-folder="playlist7" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover7.jpg" alt="">
+                        <h2>Lofi Beats</h2>
+                        <p>Relax and focus with these beats.</p>
+                    </div>
+
+                    <div data-folder="playlist8" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover8.jpg" alt="">
+                        <h2>Pop Rising</h2>
+                        <p>The next big hits in pop music.</p>
+                    </div>
+
+                    <div data-folder="playlist9" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover9.jpg" alt="">
+                        <h2>Smooth Jazz</h2>
+                        <p>The perfect background for your evening.</p>
+                    </div>
+
+                    <div data-folder="playlist10" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover10.jpg" alt="">
+                        <h2>Deep Focus</h2>
+                        <p>Relaxing Jazz That Fits the Requirements.</p>
+                    </div>
+
+                    <div data-folder="playlist11" class="card">
+                        <div class="play">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" fill="#000" />
+                            </svg>
+                        </div>
+                        <img src="cover/cover11.jpg" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood.</p>
+                    </div>
+                </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/nextsong.svg" alt="">
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img width="25" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
